@@ -1,5 +1,4 @@
 #include <iostream>
-#include <vector>
 
 class Item final
 {
@@ -83,7 +82,5 @@ void function(std::uint32_t count)
 
 int main()
 {
-
   function(300);
-
 }
