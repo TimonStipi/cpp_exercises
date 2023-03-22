@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Ressourcen_Managment", "Res
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Smart_pointer", "Smart_pointer\Smart_pointer.vcxproj", "{A5C2EDCD-EC23-4E48-970B-31C91290B1C7}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Seq_Container", "Seq_Container\Seq_Container.vcxproj", "{A1380FC0-C8A8-45B2-A245-03BCC174E13B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{A5C2EDCD-EC23-4E48-970B-31C91290B1C7}.Release|x64.Build.0 = Release|x64
 		{A5C2EDCD-EC23-4E48-970B-31C91290B1C7}.Release|x86.ActiveCfg = Release|Win32
 		{A5C2EDCD-EC23-4E48-970B-31C91290B1C7}.Release|x86.Build.0 = Release|Win32
+		{A1380FC0-C8A8-45B2-A245-03BCC174E13B}.Debug|x64.ActiveCfg = Debug|x64
+		{A1380FC0-C8A8-45B2-A245-03BCC174E13B}.Debug|x64.Build.0 = Debug|x64
+		{A1380FC0-C8A8-45B2-A245-03BCC174E13B}.Debug|x86.ActiveCfg = Debug|Win32
+		{A1380FC0-C8A8-45B2-A245-03BCC174E13B}.Debug|x86.Build.0 = Debug|Win32
+		{A1380FC0-C8A8-45B2-A245-03BCC174E13B}.Release|x64.ActiveCfg = Release|x64
+		{A1380FC0-C8A8-45B2-A245-03BCC174E13B}.Release|x64.Build.0 = Release|x64
+		{A1380FC0-C8A8-45B2-A245-03BCC174E13B}.Release|x86.ActiveCfg = Release|Win32
+		{A1380FC0-C8A8-45B2-A245-03BCC174E13B}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
