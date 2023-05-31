@@ -1,20 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="test.cpp">
+    <ClCompile Include="source\test.cpp">
       <Filter>Tests</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="VariableValues.h">
-      <Filter>header</Filter>
-    </ClInclude>
-    <ClInclude Include="pch.h">
-      <Filter>header</Filter>
-    </ClInclude>
-    <ClInclude Include="utest_defines.h">
-      <Filter>header</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Tests">
@@ -29,5 +18,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="source\include\pch.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="source\include\utest_defines.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="source\include\VariableValues.h">
+      <Filter>header</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
