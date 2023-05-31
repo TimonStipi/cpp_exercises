@@ -1,15 +1,3 @@
-/**
- * Watcher Design Pattern
- *
- * Intent: Lets you define a subscription mechanism to notify multiple objects
- * about any events that happen to the object they're observing.
- *
- * Note that there's a lot of different terms with similar meaning associated
- * with this pattern. Just remember that the Subject is also called the
- * Publisher and the Watcher is often called the Subscriber and vice versa.
- * Also the verbs "observe", "listen" or "track" usually mean the same thing.
- */
-
 #include <iostream>
 #include <list>
 #include <string>
@@ -83,15 +71,18 @@ class Watcher : public IWatcher
 private:
   std::string m_receivedUpdate;
   Variable& m_variable;
-  static int m_num;
+  static int m_counter;
+  int m_number;
   int m_value = 0;
 
 public:
 
   Watcher(Variable& variable) : m_variable(variable)
   {
+    ++m_counter;
     this->m_variable.Subscribe(this);
-    std::cout << "Hi, I'm the Watcher \"" << ++Watcher::m_num << "\".\n";
+    m_number = m_counter;
+    std::cout << "Hi, I'm the Watcher \"" << ++Watcher::m_number << "\".\n";
   }
 
   void Update(const std::string& input, int value) override
@@ -103,17 +94,17 @@ public:
   void RemoveMeFromTheList()
   {
     m_variable.Unsubscribe(this);
-    std::cout << "Watcher \"" << m_num << "\" removed from the list.\n";
+    std::cout << "Watcher \"" << m_number << "\" removed from the list.\n";
   }
   void PrintInfo()
   {
-    std::cout << "Watcher \"" << m_num << "\": a new message is available --> " << this->m_receivedUpdate << "\n";
-    std::cout << "Watcher \"" << m_num << "\" value: " << this->m_value << "\n\n";
+    std::cout << "Watcher \"" << m_number << "\": a new message is available --> " << this->m_receivedUpdate << "\n";
+    std::cout << "Watcher \"" << m_number << "\" value: " << this->m_value << "\n\n";
   }
 
 };
 
-int Watcher::m_num = 0;
+int Watcher::m_counter = 0;
 
 void ClientCode()
 {
